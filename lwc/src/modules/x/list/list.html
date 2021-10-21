@@ -1,0 +1,9 @@
+<template>
+    <ul>
+        <template for:each={items} for:item="item">
+            <li key={item.id}>
+                <x-list-renderer item={item} tmpl={tmpl}></x-list-renderer>
+            </li>
+        </template>
+    </ul>
+</template>
